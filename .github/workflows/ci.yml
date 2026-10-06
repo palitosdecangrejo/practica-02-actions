@@ -1,9 +1,11 @@
+name: CI Node
+on:
+  push:
+    branches: [main]
+
 jobs:
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./practica-2
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
